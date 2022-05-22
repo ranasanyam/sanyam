@@ -1,0 +1,39 @@
+<div style="height: 45px"></div>
+
+<div *ngIf="wishlist.length != 0">
+    <div class="container card main-div" *ngFor="let book of wishlist">
+        <h1>{{ book.title }}</h1>
+        <div class="secondary-div">
+          <div>
+            <a href="{{ book.link }}">
+              <img
+                class="card-img-top"
+                style="width: 20rem; height: 25rem"
+                src="{{ book.imageLink }}"
+                alt="{{ book.title }}"
+              />
+            </a>
+          </div>
+          <div class="details">
+            <p class="card-text">Author: {{ book.author }}</p>
+            <p class="card-text">Country: {{ book.country }}</p>
+            <p class="card-text">Language: {{ book.language }}</p>
+            <p class="card-text">Pages: {{ book.pages }}</p>
+            <p class="card-text">Published in: {{ book.year }}</p>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div *ngIf="wishlist.length == 0">
+    <div class="container">
+        <div class="card card1">
+          <h2>My Wishlist</h2>
+        </div>
+        <div class="center">
+          <img src="../../assets/images/wishlist.jpg" alt="" />
+          <h3>Add books to wishlist!</h3>
+          <button class="btn btn-primary" (click)="onClick()">Add Books</button>
+        </div>
+      </div>
+</div>

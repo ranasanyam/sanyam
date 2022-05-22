@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" style="cursor: pointer; margin-left: 20px;" routerLink="home"
+    >Magic of Books</a
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="wishlist" routerLinkActive="active"
+          >Wishlist</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="completed-books"
+          routerLinkActive="active"
+          >Completed Books</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="text-right" style="margin-right: 20px;">
+    <button type="button" class="btn btn-danger" (click)="mode()">{{text}}</button>
+  </div>
+</nav>

@@ -1,0 +1,48 @@
+.card1 {
+  height: 70vh;
+  margin: 25px;
+  padding: 25px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  height: 162px;
+  width: 250px;
+  margin: 20px 0px;
+}
+
+.main-div {
+  margin-top: 20px;
+}
+
+.secondary-div {
+  display: flex;
+}
+
+.details {
+  margin-top: 7rem;
+  margin-left: 20rem;
+}
+
+p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}

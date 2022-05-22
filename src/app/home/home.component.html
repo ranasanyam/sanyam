@@ -1,0 +1,26 @@
+<div style="height: 45px;"></div>
+
+<div class="container card main-div" *ngFor="let book of booksData">
+  <h1>{{ book.title }}</h1>
+  <div class="secondary-div">
+    <div>
+      <a href="{{ book.link }}">
+        <img
+          class="card-img-top"
+          style="width: 20rem; height: 25rem"
+          src="{{ book.imageLink }}"
+          alt="{{ book.title }}"
+        />
+      </a>
+    </div>
+    <div class="details">
+      <p class="card-text">Author: {{ book.author }}</p>
+      <p class="card-text">Country: {{ book.country }}</p>
+      <p class="card-text">Language: {{ book.language }}</p>
+      <p class="card-text">Pages: {{ book.pages }}</p>
+      <p class="card-text">Published in: {{ book.year }}</p>
+      <button type="button" class="btn btn-primary" (click)="addToWishlist(book)">Add To Wishlist</button>
+      <button type="button" class="btn btn-success" style="margin-left: 0.6rem;" (click)="addToCompleteBooks(book)">Mark as completed</button>
+    </div>
+  </div>
+</div>
